@@ -17,11 +17,7 @@ import frc.robot.subsystems.*;
 public class RobotCommands{
 
     // CREATE SUBSYSTEMS
-    private ControlPanel CONTROL;
-
-    public RobotCommands(ControlPanel control){
-        CONTROL = control;
-    }
+    private final ControlPanel CONTROL = new ControlPanel();
 
     // == COMMANDS == //
     // CONTROL PANEL COMMANDS

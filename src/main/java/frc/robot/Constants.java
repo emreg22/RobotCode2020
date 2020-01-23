@@ -21,7 +21,7 @@ public final class Constants {
   // === ROBOT PORTS === //
   // CONTROL PANEL MOTORS
   public static final int LIFT_MOTOR = 0;
-  public static final int SPIN_MOTOR = 1;
+  public static final int SPIN_MOTOR = 3;
 
   // === CONTROLLERS === //
   // STICKS
@@ -34,11 +34,11 @@ public final class Constants {
   public static final int LEFT_TRIGGER_AXIS = 7;
 
   // CONTROLLERS
-  public static final int DRIVER_CONTROLLER = 0;
-  public static final int OPERATOR_CONTROLLER = 1;
+  public static final int DRIVER_CONTROLLER = 1;
+  public static final int OPERATOR_CONTROLLER = 0;
 
-  public static final int SPIN_BUTTON = 0;
-  public static final int LIFT_BUTTON = 1;
+  public static final int SPIN_BUTTON = 1;
+  public static final int LIFT_BUTTON = 2;
   
 }
 

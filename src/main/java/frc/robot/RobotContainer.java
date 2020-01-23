@@ -18,9 +18,8 @@ import frc.robot.subsystems.*;
 public class RobotContainer {
 
     // IMPORTING STUFF AND STUFF
-    private final ControlPanel CONTROLPANEL = new ControlPanel();
 
-    private final RobotCommands Command = new RobotCommands(CONTROLPANEL);
+    private final RobotCommands Command = new RobotCommands();
 
  
     // == JOYSTICK & BUTTON BINDINGS == //
