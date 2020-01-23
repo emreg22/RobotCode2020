@@ -32,8 +32,8 @@ public class RobotContainer {
   
     // CONFIG BUTTON BINDINGS (See constants.java to change specific ports etc.)
                                 // CLIMB BUTTONS
-    private final JoystickButton controlSpinButton = new JoystickButton(opController, SPIN_MOTOR),
-                                 controlLiftButton = new JoystickButton(opController, LIFT_MOTOR);
+    private final JoystickButton controlSpinButton = new JoystickButton(opController, SPIN_BUTTON),
+                                 controlLiftButton = new JoystickButton(opController, LIFT_BUTTON);
 
    
    

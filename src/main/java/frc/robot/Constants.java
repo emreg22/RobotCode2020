@@ -17,10 +17,11 @@ package frc.robot;
  */
 public final class Constants {
 
+  
   // === ROBOT PORTS === //
   // CONTROL PANEL MOTORS
-  public static final int LIFT_MOTOR = 10;
-  public static final int SPIN_MOTOR = 11;
+  public static final int LIFT_MOTOR = 0;
+  public static final int SPIN_MOTOR = 1;
 
   // === CONTROLLERS === //
   // STICKS
@@ -35,5 +36,9 @@ public final class Constants {
   // CONTROLLERS
   public static final int DRIVER_CONTROLLER = 0;
   public static final int OPERATOR_CONTROLLER = 1;
+
+  public static final int SPIN_BUTTON = 0;
+  public static final int LIFT_BUTTON = 1;
+  
 }
 
