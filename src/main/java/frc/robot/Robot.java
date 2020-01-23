@@ -94,11 +94,6 @@ public class Robot extends TimedRobot {
   /**
    * This function is called periodically during operator control.
    */
-  @Override
-  public void teleopPeriodic() {
-    m_robotContainer.getDrivetrain().arcadeDrive(m_robotContainer.driverController.getRawAxis(Constants.FORWARD_AXIS_LEFT),
-          m_robotContainer.driverController.getRawAxis(Constants.FORWARD_AXIS_RIGHT));
-  }
 
   @Override
   public void testInit() {
