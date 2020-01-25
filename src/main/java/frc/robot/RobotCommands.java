@@ -8,7 +8,6 @@
 package frc.robot;
 
 import edu.wpi.first.wpilibj2.command.*;
-
 import frc.robot.subsystems.*;
 
 /**
@@ -20,19 +19,7 @@ public class RobotCommands{
     private final ControlPanel CONTROL = new ControlPanel();
 
     // == COMMANDS == //
-    // CONTROL PANEL COMMANDS
-    public final StartEndCommand controlLift = new StartEndCommand(
-        () -> CONTROL.lifterOnUp(),
-        () -> CONTROL.lifterOff(),
-        CONTROL
-    );
-
-    public final StartEndCommand controlDrop = new StartEndCommand(
-        () -> CONTROL.lifterOnDown(),
-        () -> CONTROL.lifterOff(),
-        CONTROL
-    );
-
+    // CONTROL PANEL COMMAND
     public final StartEndCommand controlSpin = new StartEndCommand(
         () -> CONTROL.spinnerOn(),
         () -> CONTROL.spinnerOff(),
