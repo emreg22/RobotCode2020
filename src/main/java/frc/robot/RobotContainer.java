@@ -13,6 +13,7 @@ import static frc.robot.Constants.*;
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.button.JoystickButton;
+import frc.robot.commands.ControlLiftCommand;
 import frc.robot.subsystems.*;
 
 public class RobotContainer {
@@ -20,6 +21,7 @@ public class RobotContainer {
     // IMPORTING STUFF AND STUFF
 
     private final RobotCommands Command = new RobotCommands();
+    private final ControlPanel controlPanel = new ControlPanel();
 
  
     // == JOYSTICK & BUTTON BINDINGS == //
@@ -47,17 +49,7 @@ public class RobotContainer {
 
         // CONTROL PANEL BUTTONS
         controlSpinButton.whenHeld(Command.controlSpin);
-        int x = 0;
-        if (x == 0) {
-            //controlLiftButton.cancelWhenPressed(Command.controlDrop);
-            controlLiftButton.whenPressed(Command.controlLift.withTimeout(3));
-            x = 1;
-        }
-        else {
-            //controlLiftButton.cancelWhenPressed(Command.controlLift);
-            controlLiftButton.whenPressed(Command.controlDrop.withTimeout(3));
-            x = 0;
-        }
+        controlLiftButton.whenPressed(new ControlLiftCommand(controlPanel).withTimeout(3));
     }
 
 
