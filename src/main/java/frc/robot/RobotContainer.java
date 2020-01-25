@@ -27,7 +27,7 @@ public class RobotContainer {
 
   
     // NEW JOYSTICK
-    public final Joystick driverController = new Joystick(DRIVER_CONTROLLER), opController = new Joystick(OPERATOR_CONTROLLER);
+    public final Joystick opController = new Joystick(OPERATOR_CONTROLLER);
   
     // CONFIG BUTTON BINDINGS (See constants.java to change specific ports etc.)
                                 // CLIMB BUTTONS
@@ -49,12 +49,12 @@ public class RobotContainer {
         controlSpinButton.whenHeld(Command.controlSpin);
         int x = 0;
         if (x == 0) {
-            controlLiftButton.cancelWhenPressed(Command.controlDrop);
+            //controlLiftButton.cancelWhenPressed(Command.controlDrop);
             controlLiftButton.whenPressed(Command.controlLift.withTimeout(3));
             x = 1;
         }
         else {
-            controlLiftButton.cancelWhenPressed(Command.controlLift);
+            //controlLiftButton.cancelWhenPressed(Command.controlLift);
             controlLiftButton.whenPressed(Command.controlDrop.withTimeout(3));
             x = 0;
         }

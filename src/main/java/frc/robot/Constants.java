@@ -20,8 +20,8 @@ public final class Constants {
   
   // === ROBOT PORTS === //
   // CONTROL PANEL MOTORS
-  public static final int LIFT_MOTOR = 0;
-  public static final int SPIN_MOTOR = 3;
+  public static final int LIFT_MOTOR = 3;
+  public static final int SPIN_MOTOR = 0;
 
   // === CONTROLLERS === //
   // STICKS
