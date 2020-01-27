@@ -15,32 +15,18 @@ public class ControlPanel extends SubsystemBase {
   /**
    * Creates a new ControlPanel.
    */
-  private VictorSP liftMotor;
   private VictorSP spinMotor;
 
   public ControlPanel() {
-    liftMotor = new VictorSP(LIFT_MOTOR);
     spinMotor = new VictorSP(SPIN_MOTOR);
   }
 
-  public void lifterOnUp() {
-    liftMotor.set(1);
-  }
 
   public void spinnerOn() {
-    spinMotor.set(0.5);
+    spinMotor.set(1);
   }
-
-  public void lifterOff() {
-    liftMotor.set(0);
-  }
-
   public void spinnerOff() {
     spinMotor.set(0);
-  }
-
-  public void lifterOnDown() {
-    liftMotor.set(-0.5);
   }
 
   @Override
